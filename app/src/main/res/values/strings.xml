@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MMA App</string>
+    <string name="fight">New fight</string>
+    <string name="red">Red corner</string>
+    <string name="blue">Blue corner</string>
+    <string name="round">Rounds won</string>
+    <string name="total">Total strikes</string>
+    <string name="takedowns">Takedowns</string>
+    <string name="sigStrikes">Sign. strikes</string>
+    <string name="subAttemp">Sub.attemp.</string>
+
+</resources>
