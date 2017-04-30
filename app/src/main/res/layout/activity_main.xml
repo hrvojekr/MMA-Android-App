@@ -16,16 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
-            android:background="#FFFFFF">
+            android:background="@color/white">
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="#000000"
+                android:background="@color/gray"
                 android:onClick="newFight"
                 android:text="@string/fight"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
         </RelativeLayout>
 
@@ -59,7 +59,7 @@
                         android:gravity="center_horizontal"
                         android:text="@string/red"
                         android:textAllCaps="true"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -71,7 +71,7 @@
                         android:gravity="center_horizontal"
                         android:padding="0dp"
                         android:text="0"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="36sp" />
 
                     <Button
@@ -79,7 +79,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="4dp"
-                        android:background="#D50000"
+                        android:background="@color/red"
                         android:onClick="roundWonR"
                         android:text="@string/round"
                         android:textSize="12sp"
@@ -100,8 +100,8 @@
                             android:text="@string/total"
                             android:textAlignment="center"
                             android:textAllCaps="true"
-                            android:textColor="#000000"
-                            android:textSize="10dp" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
 
 
                         <TextView
@@ -113,8 +113,8 @@
                             android:text="@string/takedowns"
                             android:textAlignment="center"
                             android:textAllCaps="true"
-                            android:textColor="#000000"
-                            android:textSize="10dp" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
 
 
                     </LinearLayout>
@@ -133,7 +133,7 @@
                             android:layout_weight="1"
                             android:text="0"
                             android:textAlignment="center"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="24sp" />
 
                         <TextView
@@ -144,7 +144,7 @@
                             android:layout_weight="1"
                             android:text="0"
                             android:textAlignment="center"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="24sp" />
 
 
@@ -165,8 +165,8 @@
                             android:text="@string/sigStrikes"
                             android:textAlignment="center"
                             android:textAllCaps="true"
-                            android:textColor="#000000"
-                            android:textSize="12dp" />
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
 
 
                         <TextView
@@ -178,8 +178,8 @@
                             android:text="@string/subAttemp"
                             android:textAlignment="center"
                             android:textAllCaps="true"
-                            android:textColor="#000000"
-                            android:textSize="12dp" />
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
 
 
                     </LinearLayout>
@@ -198,7 +198,7 @@
                             android:layout_weight="1"
                             android:text="0"
                             android:textAlignment="center"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="26sp" />
 
                         <TextView
@@ -209,7 +209,7 @@
                             android:layout_weight="1"
                             android:text="0"
                             android:textAlignment="center"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="26sp" />
 
 
@@ -223,28 +223,14 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:layout_weight="1"
-                            android:background="#000000"
                             android:onClick="totalStrikesR"
                             android:text="@string/total"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
+                            style="@style/GrayButton" />
 
                         <Button
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:layout_weight="1"
-                            android:background="#000000"
                             android:onClick="takedownsR"
                             android:text="@string/takedowns"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
+                            style="@style/GrayButton" />
 
                     </LinearLayout>
 
@@ -254,30 +240,15 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/significantStrikesRed"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:layout_weight="1"
-                            android:background="#000000"
+                            style="@style/GrayButton"
                             android:onClick="sigStrikesR"
-                            android:text="@string/sigStrikes"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
+                            android:text="@string/sigStrikes" />
 
                         <Button
-                            android:id="@+id/buttonSubmissionAttemptsRed"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:layout_weight="1"
-                            android:background="#000000"
+
                             android:onClick="submissionAttemptsR"
                             android:text="@string/subAttemp"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
+                            style="@style/GrayButton" />
 
                     </LinearLayout>
 
@@ -289,7 +260,7 @@
                     android:layout_height="414dp"
                     android:layout_marginBottom="0dp"
                     android:layout_marginTop="20dp"
-                    android:background="#000000" />
+                    android:background="@color/black" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -307,7 +278,7 @@
                         android:gravity="center_horizontal"
                         android:text="@string/blue"
                         android:textAllCaps="true"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
@@ -319,7 +290,7 @@
                         android:gravity="center_horizontal"
                         android:padding="0dp"
                         android:text="0"
-                        android:textColor="#000000"
+                        android:textColor="@color/black"
                         android:textSize="36sp" />
 
                     <Button
@@ -327,7 +298,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="4dp"
-                        android:background="#D50000"
+                        android:background="@color/blue"
                         android:onClick="roundWonB"
                         android:text="@string/round"
                         android:textSize="12sp"
@@ -348,8 +319,8 @@
                             android:text="@string/total"
                             android:textAlignment="center"
                             android:textAllCaps="true"
-                            android:textColor="#000000"
-                            android:textSize="10dp" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
 
 
                         <TextView
@@ -362,7 +333,7 @@
                             android:textAlignment="center"
                             android:textAllCaps="true"
                             android:textColor="#000000"
-                            android:textSize="10dp" />
+                            android:textSize="10sp" />
 
 
                     </LinearLayout>
@@ -381,7 +352,7 @@
                             android:layout_weight="1"
                             android:text="0"
                             android:textAlignment="center"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="24sp" />
 
                         <TextView
@@ -392,7 +363,7 @@
                             android:layout_weight="1"
                             android:text="0"
                             android:textAlignment="center"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="24sp" />
 
 
@@ -413,8 +384,8 @@
                             android:text="@string/sigStrikes"
                             android:textAlignment="center"
                             android:textAllCaps="true"
-                            android:textColor="#000000"
-                            android:textSize="12dp" />
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
 
 
                         <TextView
@@ -426,8 +397,8 @@
                             android:text="@string/subAttemp"
                             android:textAlignment="center"
                             android:textAllCaps="true"
-                            android:textColor="#000000"
-                            android:textSize="12dp" />
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
 
 
                     </LinearLayout>
@@ -446,7 +417,7 @@
                             android:layout_weight="1"
                             android:text="0"
                             android:textAlignment="center"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="26sp" />
 
                         <TextView
@@ -457,7 +428,7 @@
                             android:layout_weight="1"
                             android:text="0"
                             android:textAlignment="center"
-                            android:textColor="#000000"
+                            android:textColor="@color/black"
                             android:textSize="26sp" />
 
 
@@ -471,29 +442,14 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:layout_weight="1"
-                            android:background="#000000"
                             android:onClick="totalStirkesB"
                             android:text="@string/total"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
+                            style="@style/GrayButton" />
 
                         <Button
-                            android:id="@+id/button"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:layout_weight="1"
-                            android:background="#000000"
                             android:onClick="takedownsB"
-                            android:text="@string/takedowns"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
+                            style="@style/GrayButton"
+                            android:text="@string/takedowns" />
 
                     </LinearLayout>
 
@@ -503,28 +459,14 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:layout_weight="1"
-                            android:background="#000000"
                             android:onClick="sigStrikesB"
                             android:text="@string/sigStrikes"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
+                            style="@style/GrayButton" />
 
                         <Button
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="4dp"
-                            android:layout_weight="1"
-                            android:background="#000000"
                             android:onClick="submissionAttemptsBlue"
                             android:text="@string/subAttemp"
-                            android:textColor="#FFFFFF"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
+                            style="@style/GrayButton" />
 
                     </LinearLayout>
 
@@ -537,23 +479,23 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-            <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:max="5"
-                android:progress="0"
-                android:layout_weight="1"
-                android:id="@+id/progressBarRoundsR" />
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:progress="0"
+                    android:layout_weight="1"
+                    android:id="@+id/progressBarRoundsR" />
 
-            <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:max="5"
-                android:layout_weight="1"
-                android:progress="0"
-                android:id="@+id/progressBarRoundsB" />
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:layout_weight="1"
+                    android:progress="0"
+                    android:id="@+id/progressBarRoundsB" />
 
             </LinearLayout>
 
